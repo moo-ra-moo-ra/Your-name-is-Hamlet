@@ -3,45 +3,6 @@
 
 {% block body %}
 
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <font color="white" size = 10em>Your name is Hamlet.</font>
-      <h3 class="mb-5">
-        <em color="white">Your name is Hamlet.</em>
-      </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-    </div>
-    <div class="overlay"></div>
-  </header>
 
   <!-- About -->
   <section class="content-section bg-light" id="about">
@@ -65,20 +26,8 @@
         <h3 class="text-secondary mb-0">Your name is Hamlet.</h3>
         <h2 class="mb-5">MOO-RA-MOO-RA'S Projects</h2>
       </div>
-      <div class="row no-gutters">
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>닉네임 작명소</h2>
-                <p class="mb-0">게임 닉네임 만들기, 커플 애칭, 트위터 이름 만들기, 카페(동호회) 닉네임, 인스타그램 닉네임</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="{% static 'img/nick_name.jpg' %}" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
+          <a class="portfolio-item" href="{% url 'hamlet:A_name_list' %}">
             <span class="caption">
               <span class="caption-content">
                 <h2>이름 작명소</h2>
@@ -89,18 +38,18 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
+          <a class="portfolio-item" href="{% url 'hamlet:B_nick_name_list' %}">
             <span class="caption">
               <span class="caption-content">
-                <h2>로또 번호 생성</h2>
-                <p class="mb-0">다양한 스타일의 로또번호 추천</p>
+                <h2>닉네임 작명소</h2>
+                <p class="mb-0">게임 닉네임 만들기, 커플 애칭, 트위터 이름 만들기, 카페(동호회) 닉네임, 인스타그램 닉네임</p>
               </span>
             </span>
-            <img class="img-fluid" src="{% static 'img/lotto.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'img/nick_name.jpg' %}" alt="">
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
+          <a class="portfolio-item" href="{% url 'hamlet:C_others_list' %}">
             <span class="caption">
               <span class="caption-content">
                 <h2>무작위</h2>
