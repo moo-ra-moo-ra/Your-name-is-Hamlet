@@ -5,8 +5,25 @@
 <html lang="en">
 
 {% block body %}
-                    1. 랜덤 닉네임<br>
-                    2. 인디언식 닉네임
+<section class="content-section" id="portfolio">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h2 class="mb-5">무라무라 닉네임 작명소</h2><br><br><br><br>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:B1_random_nick_name' %}">
+                        <img class="img-fluid" src="{% static 'img/nick_name1.png' %}" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:B2_novel_nick_name' %}">
+                        <img class="img-fluid" src="{% static 'img/nick_name2.png' %}" alt="">
+                    </a>
+                </div>
+            </div></div>
+</section>
 {% endblock %}
 
 </html>

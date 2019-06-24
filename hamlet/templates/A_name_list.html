@@ -5,11 +5,43 @@
 <html lang="en">
 
 {% block body %}
-    1. 발음하기 쉬운 이름<br>
-    2. 국제적인 이름<br>
-    3. 순우리말 이름<br>
-    4. 인기있는 이름<br>
-    5. 태명
-{% endblock %}
+    <section class="content-section" id="portfolio">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h2 class="mb-5">무라무라 이름 작명소</h2><br><br><br><br>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:A1_easy_name' %}">
+                        <img class="img-fluid" src="{% static 'img/name1.png' %}" alt="">
+                    </a>
+                </div>
 
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:A2_global_name' %}">
+                        <img class="img-fluid" src="{% static 'img/name2.png' %}" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:A3_pure_name' %}">
+                        <img class="img-fluid" src="{% static 'img/name3.png' %}" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:A4_popular_name' %}">
+                        <img class="img-fluid" src="{% static 'img/name4.png' %}" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:A5_fetus_name' %}">
+                        <img class="img-fluid" src="{% static 'img/name5.png' %}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
 </html>

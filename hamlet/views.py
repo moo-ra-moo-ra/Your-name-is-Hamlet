@@ -5,6 +5,10 @@ def index(request):
     return render(request, 'index.html')
 
 
+def moora_project_list(request):
+    return render(request, 'moora_project_list.html')
+
+
 def A_name_list(request):
     return render(request, 'A_name_list.html')
 
@@ -51,5 +55,3 @@ def C1_random(request):
 
 def C2_lotto(request):
     return render(request, 'C2_lotto.html')
-
-

@@ -1,8 +1,25 @@
-{% extends 'boards/base.html' %}
-{% extends 'boards/base.html' %}
-{% load bootstrap4 %}
-{% block body %}
+{% extends 'base.html' %}
+{% load static %}
 
-                    1. 랜덤 닉네임<br>
-                    2. 인디언식 닉네임
+
+{% block body %}
+<section class="content-section" id="portfolio">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h2 class="mb-5">Other things</h2><br><br><br><br>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:C1_random' %}">
+                        <img class="img-fluid" src="{% static 'img/other1.png' %}" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:C2_lotto' %}">
+                        <img class="img-fluid" src="{% static 'img/other2.png' %}" alt="">
+                    </a>
+                </div>
+            </div></div>
+</section>
 {% endblock %}

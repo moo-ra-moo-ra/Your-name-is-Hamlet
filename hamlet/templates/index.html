@@ -3,6 +3,15 @@
 
 {% block body %}
 
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <br><br><br><br><br><br><br>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
 
   <!-- About -->
   <section class="content-section bg-light" id="about">
@@ -13,82 +22,9 @@
           <p class="lead mb-5">현대인들의 큰 문제인 일명 선택장애라고 불리우는 햄릿증후군의 해결을 위해 나섰습니다.
             평소에도 생각할 것이 많은 당신의 삶을 조금이라도 윤택하게 만들기 위하여 준비하였습니다.
             <a href="https://moo-ra-moo-ra.github.io/">MOO-RA-MOO-RA</a>!</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#callout">What We Offer</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="{% url 'hamlet:moora_project_list' %}">GO!</a>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Your name is Hamlet.</h3>
-        <h2 class="mb-5">MOO-RA-MOO-RA'S Projects</h2>
-      </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="{% url 'hamlet:A_name_list' %}">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>이름 작명소</h2>
-                <p class="mb-0">부모님 이름 섞기, 순 우리말 이름, 흔하지 않은 이름, 글로벌한 이름, 발음이 쉬운 이름, 태명</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="{% static 'img/name.jpg' %}" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="{% url 'hamlet:B_nick_name_list' %}">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>닉네임 작명소</h2>
-                <p class="mb-0">게임 닉네임 만들기, 커플 애칭, 트위터 이름 만들기, 카페(동호회) 닉네임, 인스타그램 닉네임</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="{% static 'img/nick_name.jpg' %}" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="{% url 'hamlet:C_others_list' %}">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>무작위</h2>
-                <p class="mb-0">REAL 랜덤 추출 등..</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="{% static 'img/random.jpg' %}" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Ohter us</h2>
-                  <p class="mb-0">무라무라에 대해 더 알고 싶다면?!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="{% static 'img/other.jpg' %}" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-              <a class="portfolio-item" href="#">
-                <span class="caption">
-                  <span class="caption-content">
-                    <h2>About us</h2>
-                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                  </span>
-                </span>
-                <img class="img-fluid" src="{% static 'img/us.jpg' %}" alt="">
-              </a>
-            </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
 {% endblock %}

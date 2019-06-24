@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+    <section class="content-section" id="portfolio">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0">Your name is Hamlet.</h3>
+                <h2 class="mb-5">MOO-RA-MOO-RA'S Projects</h2><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a class="portfolio-item" href="{% url 'hamlet:A_name_list' %}">
+                        <img class="img-fluid" src="{% static 'img/name.jpg' %}" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-4">
+                    <a class="portfolio-item" href="{% url 'hamlet:B_nick_name_list' %}">
+                        <img class="img-fluid" src="{% static 'img/nick_name.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a class="portfolio-item" href="{% url 'hamlet:C_others_list' %}">
+                        <img class="img-fluid" src="{% static 'img/other.jpg' %}" alt="">
+                    </a>
+                </div>
+            </div>
+            </div>
+    
+    </section>
+{% endblock %}
+
+<!-- Portfolio -->
+
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+

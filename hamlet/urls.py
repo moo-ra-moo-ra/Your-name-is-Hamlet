@@ -5,6 +5,7 @@ app_name = 'hamlet'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('moora_project_list/', views.moora_project_list, name='moora_project_list'),
     path('A_name_list/', views.A_name_list, name='A_name_list'),
     path('A1_easy_name/', views.A1_easy_name, name='A1_easy_name'),
     path('A2_global_name/', views.A2_global_name, name='A2_global_name'),
