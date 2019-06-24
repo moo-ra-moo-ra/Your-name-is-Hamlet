@@ -1,122 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Stylish Portfolio - Start Bootstrap Template</title>
-
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Your name is Hamlet.</h3>
-        <h2 class="mb-5">MOO-RA-MOO-RA'S Projects</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>이름 작명소</h2>
-                <p class="mb-0">1. 발음하기 쉬운 이름<br>
-                    2. 국제적인 이름<br>
-                    3. 순우리말 이름<br>
-                    4. 인기있는 이름<br>
-                    5. 태명
-                </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/nick_name.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>닉네임 작명소</h2>
-                <p class="mb-0">1. 랜덤 닉네임<br>
-                    2. 인디언식 닉네임
-                </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/name.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Others</h2>
-                <p class="mb-0">1. 랜덤(Random)<br>
-                2. 로또(lotto)<br></p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/lotto.jpg" alt="">
-          </a>
-        </div>
-          <div class="col-lg-6">
-              <a class="portfolio-item" href="#">
-                <span class="caption">
-                  <span class="caption-content">
-                    <h2>About us</h2>
-                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                  </span>
-                </span>
-                <img class="img-fluid" src="img/us.jpg" alt="">
-              </a>
-            </div>
-      </div>
-    </div>
-  </section>
-
-</body>
+{% block body %}
+    1. 발음하기 쉬운 이름<br>
+    2. 국제적인 이름<br>
+    3. 순우리말 이름<br>
+    4. 인기있는 이름<br>
+    5. 태명
+{% endblock %}
 
 </html>

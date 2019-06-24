@@ -1,7 +1,30 @@
-{% extends 'base.html' %}
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block body %}
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Stylish Portfolio - Start Bootstrap Template</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="{% static 'css/stylish-portfolio.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
 
   <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
@@ -55,6 +78,15 @@
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#callout">What We Offer</a>
         </div>
       </div>
+    </div>
+  </section>
+
+
+  <!-- Callout -->
+  <section class="callout" id="callout">
+    <div class="container text-center">
+
+      <a class="btn btn-primary btn-xl" href="portfolio">OK! GO!</a>
     </div>
   </section>
 
@@ -142,4 +174,16 @@
     <i class="fas fa-angle-up"></i>
   </a>
 
-{% endblock %}
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+s
+</body>
+
+</html>
