@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+
+  <!-- About -->
+ <section class="content-section" id="portfolio">
+        <div class="container">
+            <div class="content-section-heading text-center">
+{#                <h2 class="mb-5">Other things</h2><br><br><br><br>#}
+            </div>
+            <div class="row justify-content-center" >
+                <div class="col-4">
+{#                    <a class="portfolio-item" href="{% url 'hamlet:about' %}">#}
+                    <a href="http://github.com/KimRanA"> <img class="img-fluid" src="{% static 'img/rana.jpg' %}" alt=""></a>
+                        <br><br>
+                        <h2>김란아</h2>
+                        <h3>프로젝트 기획, 설계, 개발</h3>
+                        <a href="mailto:triple3dimple@gmail.com"><h3>triple3dimple@gmail.com</h3></a>
+{#                    <a class="portfolio-item" href="{% url 'hamlet:about' %}">#}
+                </div>
+                <div class="col-4">
+                    <a href="http://github.com/Moo-Ji"> <img class="img-fluid" src="{% static 'img/mooji.jpg' %}" alt=""></a>
+                        <br><br>
+                        <h2>허무지</h2>
+                        <h3>프로젝트 개발, 디버깅</h3>
+                        <a href="mailto:mooji.hur@outlook.com"><h3>mooji.hur@outlook.com</h3></a>
+                </div>
+            </div>
+
+      </div>
+  </section>
+{% endblock %}

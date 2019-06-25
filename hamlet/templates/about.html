@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+
+  <!-- About -->
+ <section class="content-section" id="portfolio">
+        <div class="container">
+            <div class="content-section-heading text-center">
+{#                <h2 class="mb-5">Other things</h2><br><br><br><br>#}
+            </div>
+            <div class="row">
+                <div class="col-sm">
+{#                    <a class="portfolio-item" href="{% url 'hamlet:about' %}">#}
+                        <img class="img-fluid" src="{% static 'img/about2.png' %}" alt="">
+                    </a>
+                </div>
+            </div>
+      </div>
+  </section>
+{% endblock %}

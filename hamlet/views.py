@@ -9,6 +9,14 @@ def index(request):
     return render(request, 'index.html')
 
 
+def about(request):
+    return render(request, 'about.html')
+
+
+def contact(request):
+    return render(request, 'contact.html')
+
+
 def moora_project_list(request):
     return render(request, 'moora_project_list.html')
 
