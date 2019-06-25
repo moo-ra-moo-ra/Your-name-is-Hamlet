@@ -1,14 +1,15 @@
 {% extends 'base.html' %}
 {% block body %}
+    <div class="container">
+        <section class="birthday d-flex flex-column justify-content-center align-items-center">
+            <h1>Real Random</h1><br><br>
+            <form action="{% url 'hamlet:C1_random_2' %}" method="get" align="center">
+                <h3>랜덤으로 고를 개수를 입력하세요.</h3><br>
+                <input type="number" name="random_num" required>
 
-    <form action="{% url 'hamlet:C1_random_2' %}" method="get">
-
-        <h3>랜덤으로 고를 갯수를 입력하세요.</h3>
-        <input type="number" name="random_num">
-
-    <input type="submit" value="결과보기">
-<!--        # 제출 버튼-->
-    </form>
-
-
+                <input class="btn btn-link ml-3 text-white bg-secondary" type="submit" value="고르러 가기">
+                <!--        # 제출 버튼-->
+            </form>
+        </section>
+    </div>
 {% endblock %}

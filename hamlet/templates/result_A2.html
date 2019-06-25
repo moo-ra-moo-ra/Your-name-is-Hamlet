@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block body %}
-<h1>결과</h1>
+    <div class="container">
+        <section class="birthday d-flex flex-column justify-content-center align-items-center">
+            <h3 align="center">글로벌한 이름은</h3><br><br>
+            <!--# 입력한 생일값-->
+            <h2 align="center">{{ name }} </h2>
 
-{{ bday }}
-{{ sex }}
-<!--# 입력한 생일값-->
-<h3> 추천하는 이름은</h3>
-{{ name }}
 
+        </section>
+    </div>
 {% endblock %}

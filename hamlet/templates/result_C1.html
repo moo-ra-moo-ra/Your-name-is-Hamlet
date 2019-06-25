@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block body %}
+    <div class="container">
+        <section class="birthday d-flex flex-column justify-content-center align-items-center">
+            <form action="" method="get">
+            <h2 align="center">Real Random</h2><br><br>
+                <h3 align="center">{{ result }}<br></h3>
+            </form>
 
-    <form action="" method="get">
-
-        <h3>결과</h3>
-        {{ result }}
-    </form>
-
-
+        </section>
+    </div>
 {% endblock %}

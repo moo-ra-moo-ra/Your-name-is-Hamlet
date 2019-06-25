@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 {% block body %}
+    <div class="container">
+        <section class="birthday d-flex flex-column justify-content-center align-items-center">
+            <h1>Lotto</h1><br>
+            <form action="{% url 'hamlet:result_C2' %}" method="get" align="center">
 
-    <form action="{% url 'hamlet:result_C2' %}" method="get">
+                <h3>로또 번호를 몇 번 추출 하시겠습니까?</h3><br>
+                <input type="number" name="lotto_num" required>
 
-        <h3>로또 번호를 몇 번 추출 하시겠습니까?</h3>
-        <input type="number" name="lotto_num">
-
-    <input type="submit" value="결과보기">
-<!--        # 제출 버튼-->
-    </form>
-
-
+                <input class="btn btn-link ml-3 text-white bg-secondary" type="submit" value="결과보기">
+                <!--        # 제출 버튼-->
+            </form>
+        </section>
+    </div>
 {% endblock %}

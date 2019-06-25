@@ -1,17 +1,19 @@
 {% extends 'base.html' %}
 {% block body %}
+    <div class="container">
+        <section class="birthday d-flex flex-column justify-content-center align-items-center">
+        <h1>Real Random</h1><br>
+            <form action=" {% url 'hamlet:result_C1' %}" method="get" align="center">
+                <h2>항목을 입력하세요.</h2><br>
+                {% for i in range %}
 
-    <form action=" {% url 'hamlet:result_C1' %}" method="get">
-        <h2>랜덤 중간 페이지</h2>
-        {% for i in range %}
+                    <input type="text" name="random_input" required/>
 
-            <input type="text" name="random_input" />
+                {% endfor %}
 
-        {% endfor %}
-
-    <input type="submit" value="결과보기">
-<!--        # 제출 버튼-->
-    </form>
-
-
+                <input class="btn btn-link ml-3 text-white bg-secondary" type="submit" value="결과보기">
+                <!--        # 제출 버튼-->
+            </form>
+        </section>
+    </div>
 {% endblock %}

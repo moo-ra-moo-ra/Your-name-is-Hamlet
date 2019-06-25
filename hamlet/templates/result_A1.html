@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 {% block body %}
-<h1>결과</h1>
+    <div class="container">
+        <section class="birthday d-flex flex-column justify-content-center align-items-center">
+            <h3 align="center">발음하기 쉬운 이름은</h3><br><br>
 
-<h3> 추천하는 이름은</h3>
-{{ name }}
+            <h2 align="center"> {{ name }} </h2>
 
+
+        </section>
+    </div>
 {% endblock %}

@@ -1,14 +1,19 @@
 {% extends 'base.html' %}
 {% block body %}
-    <form action="{% url 'hamlet:result_A3' %}" method="get">
-<!--        # 이 경로를 통해서 views.result_A1이 실행되도록 함.-->
-<h3> 성별을 입력하세요. </h3>
-    <input type="radio" name="sex" value="0">여성
-    <input type="radio" name="sex" value="1" >남성
-<h3> 생일을 입력하세요. </h3>
-    <input type="date" name="bday">
-<!--        # 날짜 값을 입력 받음-->
-    <input type="submit" value="결과보기">
-<!--        # 제출 버튼-->
-    </form>
+    <div class="container">
+        <section class="birthday d-flex flex-column justify-content-center align-items-center">
+            <form action="{% url 'hamlet:result_A3' %}" method="get" align="center">
+                <!--        # 이 경로를 통해서 views.result_A1이 실행되도록 함.-->
+                <h1>순우리말 이름</h1><br><br>
+                <h3> 성별을 입력하세요. </h3>
+                <input type="radio" name="sex" value="0" required>여성
+                <input type="radio" name="sex" value="1" required>남성<br><br>
+                <h3> 생일을 입력하세요. </h3>
+                <input type="date" name="bday" required>
+                <!--        # 날짜 값을 입력 받음-->
+                <input class="btn btn-link ml-3 text-white bg-secondary" type="submit" value="결과보기">
+                <!--        # 제출 버튼-->
+            </form>
+        </section>
+    </div>
 {% endblock %}

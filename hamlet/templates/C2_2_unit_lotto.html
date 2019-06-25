@@ -1,20 +1,24 @@
 {% extends 'base.html' %}
 {% block body %}
-<form action=" {% url 'hamlet:result_C22' %}" method="get">
-        <h2>번호 입력</h2>
-        "1번대 로또 번호를 몇 개 원하십니까?"
-        <input type="number" name="input_num_1" />
-        "10번대 로또 번호를 몇 개 원하십니까?"
-        <input type="number" name="input_num_10" />
-        "20번대 로또 번호를 몇 개 원하십니까?"
-        <input type="number" name="input_num_20" />
-        "30번대 로또 번호를 몇 개 원하십니까?"
-        <input type="number" name="input_num_30" />
-        "40번대 로또 번호를 몇 개 원하십니까?"
-        <input type="number" name="input_num_40" />
-
-
-    <input type="submit" value="결과보기">
-<!--        # 제출 버튼-->
-
+    <div class="container">
+        <section class="birthday d-flex justify-content-center align-items-center">
+            <form action=" {% url 'hamlet:result_C22' %}" method="get" align="center">
+                            <h1>내가 고르는 로또</h1><br>
+                <h3>번호 입력</h3>
+                <h5>원하는 개수가 없다면 0을 꼭 입력하세요. <br><br></h5>
+                <h6>1번대 로또 번호를 몇 개 원하십니까?
+                <input class="ml-3" type="number" name="input_num_1" required/><br>
+                10번대 로또 번호를 몇 개 원하십니까?
+                <input class="ml-2" type="number" name="input_num_10" required><br>
+                20번대 로또 번호를 몇 개 원하십니까?
+                <input class="ml-2" type="number" name="input_num_20" required/><br>
+                30번대 로또 번호를 몇 개 원하십니까?
+                <input class="ml-2" type="number" name="input_num_30" required/><br>
+                40번대 로또 번호를 몇 개 원하십니까?
+                <input class="ml-2" type="number" name="input_num_40" required/><br><br>
+                <input class="btn btn-link ml-3 text-white bg-secondary" type="submit" value="결과보기"></h6>
+                <!--        # 제출 버튼-->
+            </form>
+        </section>
+    </div>
 {% endblock %}

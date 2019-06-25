@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
 {% block body %}
-<h1>결과</h1>
-    <form action="" method="get">
-        {% for i in lotto_list %}
+<div class="container">
+    <section class="birthday d-flex flex-column justify-content-center align-items-center">
 
-        {{ i }}<br>
+        <form action="" method="get" align="center">
+            <h1>내가 고른 로또 번호는</h1><br>
+            <h3>{% for i in lotto_list %}
+            {{ i }}
+            {% endfor %}</h3>
 
-        {% endfor %}
-    </form>
-
-
+        </form>
+    </section>
+</div>
 {% endblock %}
