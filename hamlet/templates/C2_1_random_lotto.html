@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+
+    <form action="{% url 'hamlet:result_C2' %}" method="get">
+
+        <h3>로또 번호를 몇 번 추출 하시겠습니까?</h3>
+        <input type="number" name="lotto_num">
+
+    <input type="submit" value="결과보기">
+<!--        # 제출 버튼-->
+    </form>
+
+
+{% endblock %}

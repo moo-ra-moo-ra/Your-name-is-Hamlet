@@ -1,5 +1,26 @@
-{% extends 'boards/base.html' %}
-{% extends 'boards/base.html' %}
-{% load bootstrap4 %}
+{% extends 'base.html' %}
+{% load static %}
+
 {% block body %}
+        <section class="content-section" id="portfolio">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h2 class="mb-5">무라무라 태명 작명소</h2><br><br><br><br>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:A5_1_pure_fetus_name' %}">
+                        <img class="img-fluid" src="{% static 'img/fetus1.png' %}" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm">
+                    <a class="portfolio-item" href="{% url 'hamlet:A5_2_well_hearded_fetus_name' %}">
+                        <img class="img-fluid" src="{% static 'img/fetus2.png' %}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
 {% endblock %}
+

@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block body %}
-<h3> 원하는 글자수를 입력하세요. . </h3>
-    <form action="{% url 'hamlet:result_B1' %}" method="get">
+<h3> 생일을 입력하세요. </h3>
+    <form action="{% url 'hamlet:result_A52' %}" method="get">
 <!--        # 이 경로를 통해서 views.result_A1이 실행되도록 함.-->
-    <input type="number" name="ca_num">
+    <input type="date" name="bday">
 <!--        # 날짜 값을 입력 받음-->
     <input type="submit" value="결과보기">
 <!--        # 제출 버튼-->

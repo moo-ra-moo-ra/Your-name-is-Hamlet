@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 {% block body %}
-
+<h1>결과</h1>
     <form action="" method="get">
+        {% for i in lotto_list %}
 
-        <h3>결과</h3>
-        {{ result }}
+        {{ i }}<br>
+
+        {% endfor %}
     </form>
 
 

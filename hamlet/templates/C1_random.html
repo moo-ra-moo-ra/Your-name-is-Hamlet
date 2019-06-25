@@ -1,5 +1,14 @@
-{% extends 'boards/base.html' %}
-{% extends 'boards/base.html' %}
-{% load bootstrap4 %}
+{% extends 'base.html' %}
 {% block body %}
+
+    <form action="{% url 'hamlet:C1_random_2' %}" method="get">
+
+        <h3>랜덤으로 고를 갯수를 입력하세요.</h3>
+        <input type="number" name="random_num">
+
+    <input type="submit" value="결과보기">
+<!--        # 제출 버튼-->
+    </form>
+
+
 {% endblock %}

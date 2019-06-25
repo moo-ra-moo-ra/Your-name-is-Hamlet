@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+
+    <form action=" {% url 'hamlet:result_C1' %}" method="get">
+        <h2>랜덤 중간 페이지</h2>
+        {% for i in range %}
+
+            <input type="text" name="random_input" />
+
+        {% endfor %}
+
+    <input type="submit" value="결과보기">
+<!--        # 제출 버튼-->
+    </form>
+
+
+{% endblock %}

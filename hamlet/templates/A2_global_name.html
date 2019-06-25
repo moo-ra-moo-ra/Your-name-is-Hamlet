@@ -1,5 +1,14 @@
-{% extends 'boards/base.html' %}
-{% extends 'boards/base.html' %}
-{% load bootstrap4 %}
+{% extends 'base.html' %}
 {% block body %}
+    <form action="{% url 'hamlet:result_A2' %}" method="get">
+<!--        # 이 경로를 통해서 views.result_A1이 실행되도록 함.-->
+<h3> 성별을 입력하세요. </h3>
+    <input type="radio" name="sex" value="0">여성
+    <input type="radio" name="sex" value="1" >남성
+<h3> 생일을 입력하세요. </h3>
+    <input type="date" name="bday">
+<!--        # 날짜 값을 입력 받음-->
+    <input type="submit" value="결과보기">
+<!--        # 제출 버튼-->
+    </form>
 {% endblock %}
