@@ -1,0 +1,1 @@
+web: gunicorn mooramoora.wsgi --log-file -
