@@ -300,3 +300,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/django,python,windows,pycharm
+*.bak
+*.sqlite3
