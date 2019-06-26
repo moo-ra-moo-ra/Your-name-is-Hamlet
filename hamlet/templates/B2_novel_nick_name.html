@@ -1,3 +1,19 @@
-{% extends 'boards/base.html' %}
+{% extends 'base.html' %}
 {% block body %}
+    <div class="container">
+        <section class="birthday d-flex flex-column justify-content-center align-items-center">
+            <h1 align="center">인디언식 닉네임</h1><br><br>
+            <h3 align="center"> 생일을 입력하세요. </h3>
+            <div class="form">
+                <form action="{% url 'hamlet:result_B2' %}" method="get"><br>
+                    <!--        # 이 경로를 통해서 views.result_A1이 실행되도록 함.-->
+                    <input type="date" name="bday" required/>
+                    <!--        # 날짜 값을 입력 받음-->
+
+                    <input class="btn btn-link ml-3 text-white bg-secondary" type="submit" value="결과보기" style="background-color: white"/>
+                    <!--        # 제출 버튼-->
+                </form>
+            </div>
+        </section>
+    </div>
 {% endblock %}

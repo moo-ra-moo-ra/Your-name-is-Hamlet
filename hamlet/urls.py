@@ -26,6 +26,7 @@ urlpatterns = [
     path('B1_random_nick_name/', views.B1_random_nick_name, name='B1_random_nick_name'),
     path('result_B1/', views.result_B1, name='result_B1'),
     path('B2_novel_nick_name/', views.B2_novel_nick_name, name='B2_novel_nick_name'),
+    path('result_B2/', views.result_B2, name='result_B2'),
     path('C_others_list/', views.C_others_list, name='C_others_list'),
     path('C1_random/', views.C1_random, name='C1_random'),
     path('C1_random_2/', views.C1_random_2, name='C1_random_2'),

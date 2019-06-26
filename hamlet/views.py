@@ -602,6 +602,21 @@ def result_B1(request):  # 무지 추가
 def B2_novel_nick_name(request):
     return render(request, 'B2_novel_nick_name.html')
 
+def result_B2(request):
+    adj_list = ['그런', '어떤', '환한', '이런', '다른', '뽀얀', '흰', '간절한', '은은한', '좋아한', '푸른', '부지런한', '이상한', '화사한']
+    noun_month_list = ['사랑', '아이', '글', '눈', '선', '산', '마당', '시작', '오늘', '심정', '얘기', '송아지']
+    noun_day_list = ['일', '말', '집', '손', '생각', '마음', '큰오빠', '속', '점', '마을',
+                     '날', '밥', '대문', '촌', '사냥', '동안', '처음', '지금', '칫솔', '마루',
+                     '댁', '사이', '시간', '고장', '눈물', '머리', '얼굴', '자신', '자리', '기억', '위']
+    bday = request.GET.get('bday')
+    year = int(bday[3])
+    month = int(bday[5:7])
+    day = int(bday[8:])
+
+    context = {'year': adj_list[year-1], 'month': noun_month_list[month-1], 'day': noun_day_list[day-1]}
+
+    return render(request, 'result_B2.html', context)
+
 
 def C_others_list(request):
     return render(request, 'C_others_list.html')
